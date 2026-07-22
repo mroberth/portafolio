@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio minimalista de Roberth dev, también conocido como trocknick.dev."
+    />
+    <title>Roberth dev | trocknick.dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="ambient ambient-one" aria-hidden="true"></div>
+      <div class="ambient ambient-two" aria-hidden="true"></div>
+
+      <header class="topbar">
+        <a class="brand" href="#inicio" aria-label="Ir al inicio">
+          <span class="brand-mark">RD</span>
+          <span class="brand-text">
+            <strong>Roberth dev</strong>
+            <small>trocknick.dev</small>
+          </span>
+        </a>
+
+        <nav class="nav">
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </header>
+
+      <main id="inicio">
+        <section class="hero section">
+          <p class="eyebrow">Frontend estático, sin complicaciones</p>
+          <h1>Una presencia limpia para ir al grano.</h1>
+          <p class="hero-copy">
+            Soy Roberth, cuasi-ingeniero en informática. Este espacio está pensado para mostrar lo esencial:
+            quién soy, qué hago y cómo contactarme. Minimalista, directo y con una identidad que deja huella.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contacto">Hablemos</a>
+            <a class="button button-secondary" href="#proyectos">Ver base</a>
+          </div>
+
+          <div class="hero-grid" aria-label="Resumen rápido">
+            <article class="info-card">
+              <span class="info-label">Alias principal</span>
+              <strong>Roberth dev</strong>
+            </article>
+            <article class="info-card accent-card">
+              <span class="info-label">Marca futura</span>
+              <strong>trocknick.dev</strong>
+            </article>
+            <article class="info-card">
+              <span class="info-label">Enfoque</span>
+              <strong>Simple y efectivo</strong>
+            </article>
+          </div>
+        </section>
+
+        <section class="section about" id="sobre-mi">
+          <div class="section-heading">
+            <p class="eyebrow">Sobre mí</p>
+            <h2>Una forma clara de presentarte sin perder personalidad.</h2>
+          </div>
+
+          <div class="about-grid">
+            <p>
+              Me interesa construir interfaces limpias, fáciles de entender y rápidas de navegar. La idea aquí es
+              que cualquier persona entienda en segundos quién eres, qué puedes hacer y por qué vale la pena
+              escribirte.
+            </p>
+            <p>
+              El estilo visual mezcla sobriedad con acentos intensos para llamar la atención sin recargar la página.
+              Así la web se siente seria, moderna y fácil de recordar.
+            </p>
+          </div>
+        </section>
+
+        <section class="section projects" id="proyectos">
+          <div class="section-heading">
+            <p class="eyebrow">Base de portafolio</p>
+            <h2>Un esqueleto simple para crecer después.</h2>
+          </div>
+
+          <div class="project-list">
+            <article class="project-card">
+              <span class="project-tag">Identidad</span>
+              <h3>Marca personal</h3>
+              <p>
+                Roberth dev como firma principal, con trocknick.dev preparado para el futuro y pensado como una
+                marca más memorable.
+              </p>
+            </article>
+
+            <article class="project-card">
+              <span class="project-tag">Contenido</span>
+              <h3>Mensaje directo</h3>
+              <p>
+                Sin texto sobrante. Solo una historia breve, tus fortalezas y una llamada a la acción clara para
+                quien llegue a la página.
+              </p>
+            </article>
+
+            <article class="project-card">
+              <span class="project-tag">Escala</span>
+              <h3>Fácil de extender</h3>
+              <p>
+                Más adelante puedes sumar proyectos, redes, experiencia o un blog sin cambiar la base técnica ni la
+                estética general.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section contact" id="contacto">
+          <div>
+            <p class="eyebrow">Contacto</p>
+            <h2>Si alguien quiere escribirte, que encuentre rápido cómo hacerlo.</h2>
+          </div>
+
+          <a class="contact-link" href="mailto:hola@trocknick.dev">hola@trocknick.dev</a>
+          <p class="contact-note">
+            Cambia el correo, agrega tus redes o deja este enlace como punto principal de contacto.
+          </p>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span>Roberth dev / trocknick.dev</span>
+        <span id="year"></span>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
