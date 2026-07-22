@@ -5,139 +5,351 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portafolio minimalista de Roberth dev, también conocido como trocknick.dev."
+      content="Portafolio profesional de Roberth Matos (trocknick.dev) — Cuasi-Ingeniero en Informática, Desarrollador Web y Móvil."
     />
-    <title>Roberth dev | trocknick.dev</title>
+    <title>Roberth Matos | trocknick.dev — Ingeniero en Informática & Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <div class="ambient ambient-one" aria-hidden="true"></div>
-      <div class="ambient ambient-two" aria-hidden="true"></div>
+    <!-- Background Decorator Lines & Gradients -->
+    <div class="bg-pattern" aria-hidden="true"></div>
+    <div class="ambient ambient-blue" aria-hidden="true"></div>
+    <div class="ambient ambient-sky" aria-hidden="true"></div>
 
+    <div class="page-shell">
+      <!-- Top Navigation -->
       <header class="topbar">
         <a class="brand" href="#inicio" aria-label="Ir al inicio">
-          <span class="brand-mark">RD</span>
-          <span class="brand-text">
-            <strong>Roberth dev</strong>
-            <small>trocknick.dev</small>
-          </span>
+          <div class="brand-avatar">
+            <span>RM</span>
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">Roberth Matos</span>
+            <span class="brand-domain">trocknick.dev</span>
+          </div>
         </a>
 
         <nav class="nav">
-          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#sobre-mi">Sobre Mí</a>
           <a href="#proyectos">Proyectos</a>
-          <a href="#contacto">Contacto</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#contacto" class="nav-cta">Contacto</a>
         </nav>
       </header>
 
       <main id="inicio">
+        <!-- Hero Section -->
         <section class="hero section">
-          <p class="eyebrow">Frontend estático, sin complicaciones</p>
-          <h1>Una presencia limpia para ir al grano.</h1>
-          <p class="hero-copy">
-            Soy Roberth, cuasi-ingeniero en informática. Este espacio está pensado para mostrar lo esencial:
-            quién soy, qué hago y cómo contactarme. Minimalista, directo y con una identidad que deja huella.
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Cuasi-Ingeniero en Informática — Último Semestre</span>
+          </div>
+
+          <h1 class="hero-title">
+            Desarrollo Web & Móvil estructurado con <span class="highlight-text">rigor de ingeniería.</span>
+          </h1>
+
+          <p class="hero-description">
+            Hola, soy <strong>Roberth Matos</strong>. Apasionado por entender cómo funciona el software desde sus cimientos hasta la interfaz final. Construyo soluciones robustas, eficientes y explicables, sin depender ciegamente de la IA.
           </p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#contacto">Hablemos</a>
-            <a class="button button-secondary" href="#proyectos">Ver base</a>
+            <a class="button button-primary" href="#proyectos">
+              <span>Explorar Proyectos</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a class="button button-secondary" href="#contacto">
+              <span>Contactar</span>
+            </a>
           </div>
 
-          <div class="hero-grid" aria-label="Resumen rápido">
-            <article class="info-card">
-              <span class="info-label">Alias principal</span>
-              <strong>Roberth dev</strong>
-            </article>
-            <article class="info-card accent-card">
-              <span class="info-label">Marca futura</span>
-              <strong>trocknick.dev</strong>
-            </article>
-            <article class="info-card">
-              <span class="info-label">Enfoque</span>
-              <strong>Simple y efectivo</strong>
-            </article>
+          <div class="hero-stats">
+            <div class="stat-card">
+              <span class="stat-label">Identidad & Marca</span>
+              <strong class="stat-value">trocknick.dev</strong>
+              <small class="stat-sub">Sello personal & Dominio</small>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Enfoque Técnico</span>
+              <strong class="stat-value">Web & Móvil</strong>
+              <small class="stat-sub">Fullstack, APIs & Arquitectura</small>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Filosofía</span>
+              <strong class="stat-value">Perfeccionista</strong>
+              <small class="stat-sub">Comprensión profunda de código</small>
+            </div>
           </div>
         </section>
 
+        <!-- Sobre Mí Section -->
         <section class="section about" id="sobre-mi">
-          <div class="section-heading">
-            <p class="eyebrow">Sobre mí</p>
-            <h2>Una forma clara de presentarte sin perder personalidad.</h2>
+          <div class="section-header">
+            <span class="section-tag">Sobre Mí & Filosofía</span>
+            <h2>Ingeniería, pasión gamer y obsesión por los detalles.</h2>
           </div>
 
           <div class="about-grid">
-            <p>
-              Me interesa construir interfaces limpias, fáciles de entender y rápidas de navegar. La idea aquí es
-              que cualquier persona entienda en segundos quién eres, qué puedes hacer y por qué vale la pena
-              escribirte.
-            </p>
-            <p>
-              El estilo visual mezcla sobriedad con acentos intensos para llamar la atención sin recargar la página.
-              Así la web se siente seria, moderna y fácil de recordar.
-            </p>
+            <div class="about-card">
+              <div class="about-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 4 4 0 0 0-4-4H8a4 4 4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <h3>¿Quién es Roberth Matos?</h3>
+              <p>
+                Estoy a un solo semestre de graduarme como <strong>Ingeniero en Informática</strong>. Mi vocación nació de la fascinación por la tecnología y las computadoras desde muy pequeño, alimentada también por mi lado <em>gamer</em>.
+              </p>
+              <p>
+                Mi alias <strong>Trocknickero</strong> derivó en la marca digital <strong>trocknick.dev</strong>, el sello técnico donde combino lógica, diseño estético e ingeniería.
+              </p>
+            </div>
+
+            <div class="about-card">
+              <div class="about-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </div>
+              <h3>Cómo Trabajo</h3>
+              <p>
+                No me conformo con soluciones que solo "funcionan en la superficie". Soy <strong>perfeccionista</strong> y disfruto desglosar los problemas paso a paso: desde el diseño de la base de datos hasta la seguridad de la API y la experiencia de usuario.
+              </p>
+              <p>
+                Para mí, utilizar herramientas avanzadas o IA es una ayuda para agilizar, pero el verdadero valor de un ingeniero radica en <strong>comprender a fondo cada línea de código</strong> y saber explicar detalladamente el porqué de cada decisión.
+              </p>
+            </div>
           </div>
         </section>
 
+        <!-- Proyectos Section -->
         <section class="section projects" id="proyectos">
-          <div class="section-heading">
-            <p class="eyebrow">Base de portafolio</p>
-            <h2>Un esqueleto simple para crecer después.</h2>
+          <div class="section-header">
+            <span class="section-tag">Portafolio de Proyectos</span>
+            <h2>Sistemas reales construidos con arquitectura sólida.</h2>
+            <p class="section-desc">
+              Proyectos destacados donde aplico gestión de base de datos, seguridad, comunicación en tiempo real y microservicios.
+            </p>
           </div>
 
-          <div class="project-list">
+          <div class="project-grid">
+            <!-- Proyecto 1: CEV Informática -->
             <article class="project-card">
-              <span class="project-tag">Identidad</span>
-              <h3>Marca personal</h3>
-              <p>
-                Roberth dev como firma principal, con trocknick.dev preparado para el futuro y pensado como una
-                marca más memorable.
-              </p>
+              <div class="project-preview">
+                <!-- Miniatura Visual / Mockup CSS SVG -->
+                <div class="mockup-window">
+                  <div class="mockup-bar">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="mockup-title">cev-informatica.local / dashboard</span>
+                  </div>
+                  <div class="mockup-body mockup-cev">
+                    <div class="mockup-header-ui">
+                      <div class="mockup-badge-live">● SSE Realtime</div>
+                      <div class="mockup-user">Rol: Profesor / Admin</div>
+                    </div>
+                    <div class="mockup-stats-row">
+                      <div class="mockup-stat-box">
+                        <small>Estudiantes</small>
+                        <strong>+450</strong>
+                      </div>
+                      <div class="mockup-stat-box">
+                        <small>Seguridad</small>
+                        <strong>JWT + Token Bucket</strong>
+                      </div>
+                    </div>
+                    <div class="mockup-chart-placeholder">
+                      <div class="chart-bar" style="height: 60%"></div>
+                      <div class="chart-bar" style="height: 85%"></div>
+                      <div class="chart-bar" style="height: 45%"></div>
+                      <div class="chart-bar" style="height: 95%"></div>
+                      <div class="chart-bar" style="height: 70%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="tag">PHP 8</span>
+                  <span class="tag">MariaDB</span>
+                  <span class="tag">SSE Realtime</span>
+                  <span class="tag">JWT Auth</span>
+                  <span class="tag">Chart.js</span>
+                </div>
+                <h3>CEV Informática — Sistema de Gestión Académica</h3>
+                <p>
+                  Plataforma web integral desarrollada para el PNF en Informática. Permite administrar estudiantes, docentes, notas, asignaciones y horarios con soporte para 3 roles de usuario.
+                </p>
+                <ul class="project-features">
+                  <li><strong>Seguridad:</strong> Autenticación JWT, protección CSRF y Rate Limiting (Token Bucket).</li>
+                  <li><strong>Tiempo real:</strong> Notificaciones mediante Server-Sent Events (SSE).</li>
+                  <li><strong>Reportes:</strong> Panel interactivo con gráficos de rendimiento con Chart.js.</li>
+                </ul>
+              </div>
             </article>
 
+            <!-- Proyecto 2: DIRPOLES_IA & DIRPOLES_4 -->
             <article class="project-card">
-              <span class="project-tag">Contenido</span>
-              <h3>Mensaje directo</h3>
-              <p>
-                Sin texto sobrante. Solo una historia breve, tus fortalezas y una llamada a la acción clara para
-                quien llegue a la página.
-              </p>
+              <div class="project-preview">
+                <div class="mockup-window">
+                  <div class="mockup-bar">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="mockup-title">api.dirpoles-ia.local:8000/docs</span>
+                  </div>
+                  <div class="mockup-body mockup-ia">
+                    <div class="mockup-code-header">
+                      <span class="method post">POST</span>
+                      <span class="endpoint">/api/v1/analizar</span>
+                      <span class="status-200">200 OK</span>
+                    </div>
+                    <div class="mockup-code-body">
+<span class="token-key">"status"</span>: <span class="token-string">"success"</span>,
+<span class="token-key">"hallazgos"</span>: [<span class="token-string">"Tendencia mensual creciente en servicios"</span>],
+<span class="token-key">"top_pnf"</span>: [<span class="token-string">"Informática"</span>, <span class="token-string">"Administración"</span>],
+<span class="token-key">"auth"</span>: <span class="token-string">"X-API-Key Validated"</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">FastAPI</span>
+                  <span class="tag">MySQL</span>
+                  <span class="tag">REST API</span>
+                  <span class="tag">Pydantic</span>
+                </div>
+                <h3>DIRPOLES_IA — Microservicio de Análisis Estadístico</h3>
+                <p>
+                  Motor analítico en Python con FastAPI diseñado para conectarse de forma independiente con el sistema institucional DIRPOLES_4 (PHP).
+                </p>
+                <ul class="project-features">
+                  <li><strong>Arquitectura desacoplada:</strong> Comunicación HTTP/JSON con autenticación por API Key.</li>
+                  <li><strong>Procesamiento de datos:</strong> Análisis mensual, tendencias, morbilidad y resúmenes ejecutivos.</li>
+                  <li><strong>Validación estricta:</strong> Modelos con Pydantic y documentación OpenAPI/Swagger automática.</li>
+                </ul>
+              </div>
             </article>
 
+            <!-- Proyecto 3: trocknick.dev Portafolio -->
             <article class="project-card">
-              <span class="project-tag">Escala</span>
-              <h3>Fácil de extender</h3>
-              <p>
-                Más adelante puedes sumar proyectos, redes, experiencia o un blog sin cambiar la base técnica ni la
-                estética general.
-              </p>
+              <div class="project-preview">
+                <div class="mockup-window">
+                  <div class="mockup-bar">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="mockup-title">trocknick.dev</span>
+                  </div>
+                  <div class="mockup-body mockup-brand">
+                    <div class="mockup-brand-preview">
+                      <div class="brand-badge-mini">trocknick.dev</div>
+                      <h4>Clean & Fast Portfolio Architecture</h4>
+                      <div class="performance-chips">
+                        <span class="chip">⚡ 100% Performance</span>
+                        <span class="chip">🎨 Azul & Blanco</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3 Custom Props</span>
+                  <span class="tag">JavaScript ES6</span>
+                  <span class="tag">Vercel</span>
+                </div>
+                <h3>trocknick.dev — Portafolio & Marca Personal</h3>
+                <p>
+                  Diseño de interfaz ligero y profesional optimizado para la presentación de proyectos, velocidad de carga y adaptación responsiva sin frameworks pesados innecesarios.
+                </p>
+                <ul class="project-features">
+                  <li><strong>Paleta personalizada:</strong> Tonos blancos, azules y claros limpios.</li>
+                  <li><strong>Miniaturas interactivas:</strong> Mockups vectoriales responsivos.</li>
+                </ul>
+              </div>
             </article>
           </div>
         </section>
 
-        <section class="section contact" id="contacto">
-          <div>
-            <p class="eyebrow">Contacto</p>
-            <h2>Si alguien quiere escribirte, que encuentre rápido cómo hacerlo.</h2>
+        <!-- Habilidades Section -->
+        <section class="section skills" id="habilidades">
+          <div class="section-header">
+            <span class="section-tag">Competencias Técnicas</span>
+            <h2>Tecnologías y áreas de dominio.</h2>
           </div>
 
-          <a class="contact-link" href="mailto:hola@trocknick.dev">hola@trocknick.dev</a>
-          <p class="contact-note">
-            Cambia el correo, agrega tus redes o deja este enlace como punto principal de contacto.
-          </p>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <div class="skill-icon">🌐</div>
+              <h3>Desarrollo Web</h3>
+              <p>Frontend estructurado en HTML5, CSS3 móderno (Flexbox, Grid), JavaScript (ES6+), Bootstrap, conectividad REST API y plantillas dinámicas.</p>
+            </div>
+
+            <div class="skill-category">
+              <div class="skill-icon">⚙️</div>
+              <h3>Backend & Bases de Datos</h3>
+              <p>PHP 8, Python (FastAPI, SQLAlchemy), MySQL / MariaDB, diseño de esquemas relacionales, migraciones y arquitectura MVC / Microservicios.</p>
+            </div>
+
+            <div class="skill-category">
+              <div class="skill-icon">📱</div>
+              <h3>Desarrollo Móvil</h3>
+              <p>Conocimientos en desarrollo de aplicaciones móviles, consumo de servicios API y maquetación adaptativa a pantallas pequeñas.</p>
+            </div>
+
+            <div class="skill-category">
+              <div class="skill-icon">🔒</div>
+              <h3>Seguridad & Buenas Prácticas</h3>
+              <p>Autenticación JWT, Rate Limiting (Token Bucket), sanitización de datos, protección CSRF/CORS y control de versiones con Git.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contacto Section -->
+        <section class="section contact" id="contacto">
+          <div class="contact-card">
+            <span class="section-tag">¿Hablamos?</span>
+            <h2>¿Tienes un proyecto en mente o una propuesta laboral?</h2>
+            <p>
+              Estoy abierto a oportunidades en desarrollo web y móvil donde pueda aportar rigor técnico, resolución de problemas y aprendizaje continuo.
+            </p>
+
+            <div class="contact-links">
+              <a class="contact-email" href="mailto:hola@trocknick.dev">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <span>hola@trocknick.dev</span>
+              </a>
+
+              <div class="social-pills">
+                <span class="social-pill">📍 Roberth Matos</span>
+                <span class="social-pill">💻 GitHub / Proyectos</span>
+                <span class="social-pill">🚀 Vercel Deployed</span>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
 
+      <!-- Footer -->
       <footer class="footer">
-        <span>Roberth dev / trocknick.dev</span>
-        <span id="year"></span>
+        <div class="footer-left">
+          <strong>Roberth Matos</strong>
+          <span class="footer-sep">•</span>
+          <span>trocknick.dev</span>
+        </div>
+        <div class="footer-right">
+          <span>&copy; <span id="year"></span> Todos los derechos reservados.</span>
+        </div>
       </footer>
     </div>
 

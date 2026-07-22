@@ -1,9 +1,10 @@
+// Dynamic year in footer
 const yearElement = document.querySelector("#year");
-
 if (yearElement) {
   yearElement.textContent = new Date().getFullYear();
 }
 
+// Fade-in animation on scroll using Intersection Observer
 const sections = document.querySelectorAll(".section");
 
 if ("IntersectionObserver" in window) {
@@ -17,13 +18,13 @@ if ("IntersectionObserver" in window) {
         }
       });
     },
-    { threshold: 0.12 }
+    { threshold: 0.1 }
   );
 
   sections.forEach((section) => {
     section.style.opacity = "0";
-    section.style.transform = "translateY(18px)";
-    section.style.transition = "opacity 500ms ease, transform 500ms ease";
+    section.style.transform = "translateY(24px)";
+    section.style.transition = "opacity 600ms ease, transform 600ms ease";
     observer.observe(section);
   });
 }
