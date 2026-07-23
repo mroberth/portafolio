@@ -1,7 +1,7 @@
 :root {
   color-scheme: light;
   
-  /* Primary White & Blue Palette */
+  /* Paleta Principal Blanco y Azul */
   --bg-page: #f8fafc;
   --bg-card: #ffffff;
   --bg-card-hover: #f1f5f9;
@@ -49,7 +49,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Background Subtle Grid Pattern */
+/* Patrón de cuadrícula tenue en el fondo */
 .bg-pattern {
   position: fixed;
   inset: 0;
@@ -61,7 +61,7 @@ body {
   z-index: -2;
 }
 
-/* Ambient Blue Lighting Glows */
+/* Luces ambientales difuminadas */
 .ambient {
   position: fixed;
   border-radius: 50%;
@@ -98,7 +98,7 @@ a {
   padding: 24px 0 40px;
 }
 
-/* --- Top Header Navigation --- */
+/* --- Barra de Navegación Superior --- */
 .topbar {
   display: flex;
   align-items: center;
@@ -185,7 +185,7 @@ a {
   color: #ffffff !important;
 }
 
-/* --- Section Layout --- */
+/* --- Estructura de Secciones --- */
 .section {
   padding: 48px;
   margin-top: 24px;
@@ -491,6 +491,42 @@ a {
   justify-content: space-between;
 }
 
+/* Mockup Ecosistema DIRPOLES */
+.mockup-ecosystem {
+  background: linear-gradient(135deg, #0b1329, #1e293b);
+}
+
+.ecosystem-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.eco-box {
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.eco-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #60a5fa;
+}
+
+.eco-ai .eco-tag {
+  color: #38bdf8;
+}
+
+.eco-box small {
+  font-size: 0.68rem;
+  color: #94a3b8;
+}
+
+/* Mockup CEV Informática */
 .mockup-cev {
   background: linear-gradient(135deg, #0f172a, #1e293b);
   color: #f8fafc;
@@ -553,50 +589,7 @@ a {
   border-radius: 3px 3px 0 0;
 }
 
-.mockup-ia {
-  background: #090d16;
-  color: #e2e8f0;
-}
-
-.mockup-code-header {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  font-size: 0.75rem;
-  margin-bottom: 10px;
-}
-
-.method.post {
-  background-color: #2563eb;
-  color: #ffffff;
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-weight: 700;
-}
-
-.endpoint {
-  color: #38bdf8;
-}
-
-.status-200 {
-  color: #4ade80;
-  font-weight: 700;
-  margin-left: auto;
-}
-
-.mockup-code-body {
-  font-size: 0.72rem;
-  line-height: 1.5;
-  white-space: pre-wrap;
-  color: #cbd5e1;
-  background: rgba(0, 0, 0, 0.3);
-  padding: 10px;
-  border-radius: 6px;
-}
-
-.token-key { color: #38bdf8; }
-.token-string { color: #a7f3d0; }
-
+/* Mockup Marca Personal */
 .mockup-brand {
   background: linear-gradient(135deg, #1e1b4b, #0f172a);
   color: #ffffff;
@@ -675,7 +668,7 @@ a {
 }
 
 .project-features {
-  margin: auto 0 0 0;
+  margin: 0 0 20px 0;
   padding-left: 0;
   list-style: none;
   display: flex;
@@ -698,6 +691,33 @@ a {
   left: 0;
   color: var(--primary-blue);
   font-weight: 800;
+}
+
+.project-actions {
+  margin-top: auto;
+  padding-top: 12px;
+}
+
+.btn-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  transition: all 180ms ease;
+  width: 100%;
+  justify-content: center;
+}
+
+.btn-github:hover {
+  background-color: var(--primary-blue);
+  color: #ffffff;
+  border-color: var(--primary-blue);
 }
 
 /* --- Skills Section --- */
@@ -794,7 +814,8 @@ a {
   margin-top: 10px;
 }
 
-.social-pill {
+.social-pill,
+.social-pill-link {
   padding: 8px 16px;
   background-color: var(--bg-page);
   border: 1px solid var(--border-color);
@@ -802,6 +823,12 @@ a {
   font-size: 0.88rem;
   font-weight: 600;
   color: var(--text-secondary);
+  transition: all 150ms ease;
+}
+
+.social-pill-link:hover {
+  border-color: var(--primary-blue);
+  color: var(--primary-blue);
 }
 
 /* --- Footer --- */
